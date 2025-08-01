@@ -3,7 +3,7 @@ import {ApiResponse} from "@/entities/message/types";
 
 export const sendMessage = async (message: string): Promise<ApiResponse> => {
     try{
-        const response =  await axiosInstance.post("chat", {
+        const response =  await axiosInstance.post("/chat", {
             message: message,
         });
 
